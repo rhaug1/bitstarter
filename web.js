@@ -12,7 +12,7 @@ fs.readFileSync('./index.html', function (err,html){
 
 app.get('/', function(request, response) {
  
- 	response.send(html);
+ 	response.write(html);
 })
 });
 
