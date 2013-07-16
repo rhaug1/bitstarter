@@ -6,7 +6,7 @@ var output = new Buffer();
 
 app.get('/', function(request, response) {
  
- 	response.write(inFile);
+ 	response.write('hallo');
 });
 
 var port = process.env.PORT || 5000;
