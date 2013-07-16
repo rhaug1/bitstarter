@@ -2,7 +2,7 @@ var express = require('express');
 var fs = require('fs');
 var app = express.createServer(express.logger());
 
-fs = fs.createReadStream('index.html');
+fs = fs.readFile('index.html');
 app.get('/', function(request, response) {
  
  	response.send(fs);
